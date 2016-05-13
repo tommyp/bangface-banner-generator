@@ -1,5 +1,5 @@
-{{input value=say autofocus="autofocus"}}
+{{input value=banner autofocus="autofocus"}}
 
-{{sayWithDefault}}
-
-<span {{action "focusOnInput"}}>Focus on input</span>
+<div class="container" {{action "focusOnInput"}}>
+  <h1>{{bannerWithDefault}}</h1>
+</div>

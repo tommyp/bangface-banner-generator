@@ -2,15 +2,15 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-  queryParams: ['say'],
+  queryParams: ['banner'],
 
-  sayWithDefault: function () {
-    if (this.get('say')) {
-      return this.get('say')
+  bannerWithDefault: function () {
+    if (this.get('banner')) {
+      return this.get('banner');
     } else {
-      return "Type now";
+      return "Type here and fuck off";
     }
-  }.property('say'),
+  }.property('banner'),
 
   actions: {
     focusOnInput() {
