@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {bannerText: "type here and fuck off"};
+    this.state = {bannerText: ""};
 
     this.onInputChange = this.onInputChange.bind(this);
   }
@@ -20,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Banner text={this.state.bannerText}/>
+        <Banner text={this.state.bannerText || "type here and fuck off"}/>
 
         <Input onInputChange={this.onInputChange} />
       </div>
