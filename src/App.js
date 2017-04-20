@@ -8,9 +8,11 @@ class App extends React.Component {
   constructor(props) {
     super(props)
 
-    this.state = {bannerText: "type here and fuck off"};
-
     this.onInputChange = this.onInputChange.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({bannerText: "type here and fuck off"});
   }
 
   onInputChange(input) {
