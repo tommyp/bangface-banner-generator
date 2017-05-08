@@ -6,9 +6,14 @@ export default class Input extends React.Component {
 
     this.onInputChange = this.props.onInputChange.bind(this);
   }
+
+  onBlur(e) {
+    e.target.focus();
+  }
+
   render() {
     return (
-      <input type="text" onChange={this.onInputChange} autoFocus="true"/>
+      <input type="text" onChange={this.onInputChange} autoFocus="true" onBlur={this.onBlur} />
     )
   }
 }
